@@ -7,20 +7,21 @@
   <title></title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="apple-touch-icon" href="icon.png">
 
-  <!-- -----------------------------------------FontFamily-------------------------------------------------- -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald|PT+Sans" rel="stylesheet">
-  <!-- -----------------------------------------FontAwesome-------------------------------------------------- -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-    crossorigin="anonymous">
-  <!----------------------------------------------CSS3-------------------------------------------------------->
+  <!-- <link rel="manifest" href="site.webmanifest"> -->
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+ <!-- -----------------------------------------FontFamily-------------------------------------------------- -->
+ <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald|PT+Sans" rel="stylesheet">
+ <!-- -----------------------------------------FontAwesome-------------------------------------------------- -->
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+   crossorigin="anonymous">
+ <!----------------------------------------------CSS3-------------------------------------------------------->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-
   <header>
 
     <div class="hero">
@@ -92,7 +93,9 @@
     <div class="contenido-programa">
       <div class="contenedor">
         <div class="programa-evento">
+
           <h2>Programa del evento</h2>
+          
           <nav class="menu-programa">
             <a href="#talleres"><i class="fa fa-code" aria-hidden="true"></i>Talleres</a>
             <a href="#conferencias"><i class="fa fa-comment" aria-hidden="true"></i>Conferencias</a>
@@ -102,34 +105,47 @@
           <div id="talleres" class="info-curso ocultar clearfix">
 
             <div class="detalle-evento">
+             
               <h3>HTML5, CSS3 y JavaScript</h3>
+             
               <p><i class="far fa-clock" aria-hidden="true"></i>16:00 hrs</p>
               <p><i class="fa fa-calendar-alt" aria-hidden="true"></i>10 de Dic</p>
               <p><i class="fa fa-user" aria-hidden="true"></i>Jose Ricardo Medina Lopez</p>
             </div>
 
             <div class="detalle-evento">
+              
               <h3>Responsive Web Design</h3>
+              
               <p><i class="far fa-clock" aria-hidden="true"></i>10:00 hrs</p>
               <p><i class="far fa-calendar-alt" aria-hidden="true"></i>10 de Dic</p>
               <p><i class="fa fa-user" aria-hidden="true"></i>Johana Lizeht Reyna Flores</p>
             </div>
-            <a href="#" class="button float-rigth">Ver todos</a>
+            <a href="#" class="button float-righ">Ver todos</a>
           </div>
-
-        </div>
+          <!--#talleres-->
       </div>
-    </div>
-
+      <!--.programa-evento-->
+  </div>
+  <!--.contenedor-->
+</div>
+<!--.contenido-programa-->
   </section> <!-- programa -->
 
 
   <!-- ----------------------------------------------JavaScript------------------------------------------------------------------ -->
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
-  <script src="js/vendor/jquery-3.3.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 </body>
 
 </html>
