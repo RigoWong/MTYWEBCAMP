@@ -17,18 +17,15 @@
     <!----------------------------------------------CSS3-------------------------------------------------------->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/colorbox.css">
     <link rel="stylesheet" href="css/css.css">
-    <script src="js/modernizr.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js" integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg==" crossorigin=""></script>
+    
+    
 </head>
 
 <body class="index">
-    <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
-
-
+ 
     <header class="site-header">
         <div class="hero">
             <div class="contenido-header">
@@ -109,8 +106,8 @@
                                       <i class="fa fa-comment" aria-hidden="true"></i> Conferencias                                </a>
                         <a href="#talleres">
                                       <i class="fa fa-code" aria-hidden="true"></i> Talleres                                </a>
-                        <a href="#workshop">
-                                      <i class="fa fa-comments" aria-hidden="true"></i> Workshop                                </a>
+                        <!-- <a href="#workshop">
+                                      <i class="fa fa-comments" aria-hidden="true"></i> Workshop                                </a> -->
                     </nav>
 
 
@@ -326,13 +323,13 @@
         <div class="contenedor">
             <ul class="resumen-evento clearfix">
                 <li>
-                    <p class="numero">0</p> Invitados</li>
+                    <p class="numero"></p> Invitados</li>
                 <li>
-                    <p class="numero">0</p> Talleres</li>
+                    <p class="numero"></p> Talleres</li>
                 <li>
-                    <p class="numero">0</p> Días</li>
+                    <p class="numero"></p> Días</li>
                 <li>
-                    <p class="numero">0</p> Conferencias</li>
+                    <p class="numero"></p> Conferencias</li>
 
             </ul>
         </div>
@@ -383,7 +380,7 @@
         </div>
     </section>
 
-    <div id="mapa" class="mapa"></div>
+    <div id="mapid" class="mapa"></div>
 
     <section class="seccion">
         <h2>Testimoniales</h2>
@@ -475,7 +472,7 @@
         </div>
 
         <p class="copyright">
-            Todos los derechos Reservados GDLWEBCAMP 2016.
+            Todos los derechos Reservados GDLWEBCAMP 2019.
         </p>
 
 
@@ -485,19 +482,19 @@
     </footer>
     <!-- ----------------------------------------------JavaScript------------------------------------------------------------------ -->
   
-<!-- ----------------------------------------------JavaScript------------------------------------------------------------------ -->
+    <!-- ----------------------------------------------JavaScript------------------------------------------------------------------ -->
+    <script src="js/jquery-3.3.1.min.js"></script>
 
-<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-
-    <script src="js/plugins.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-animateNumber/0.0.14/jquery.animateNumber.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <!-- <script src="js/plugins.js"></script> -->
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/jquery.lettering.min.js"></script>
+    <!-- <script src="js/jquery.waypoints.min.js"></script> -->
     <script src="js/main.js"></script>
-    <script src="js/cotizador.js"></script>
+    <script src="js/mapa.js"></script>
+    <script src="js/animacion.numero.js"></script>
+    <script src="js/modernizr.min.js"></script>
+    
 
     </body>
 

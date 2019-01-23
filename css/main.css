@@ -217,10 +217,10 @@ h1.nombre-sitio span {
     top:5px; left:10px;
   }
   .char7 {
-    top:20px; left:-10px;
+    top:13px; left:-5px;
   }
   .char8 {
-    top:0; left: 10px;
+    top:0; left: -2px;
   }
   .char9 {
     top:10px;    right: 20px;
@@ -639,11 +639,11 @@ div.tabla-precio p.numero {
 }
 
 /**+ MAPA   **/
-
-div.mapa {
+#mapid {
   height: 420px;
-  background-color: green;
+  /* background-color: green; */
 }
+
 /**+ Testimoniales   **/
 div.testimoniales {
   padding-bottom: 20px;
@@ -789,6 +789,7 @@ p.copyright {
   margin:20px 0 0 0;
   text-align: center;
 }
+
 /*** INTERNAS **/
 /* Conferencia **/
 .navegacion-principal .activo {
@@ -824,7 +825,6 @@ div.caja {
 div.campo {
   padding: 20px;
 }
-
 @media only screen and (min-width:768px) {
   div.campo {
     float: left;
@@ -915,12 +915,13 @@ input[disabled].button {
   opacity: .5;
 }
 #error {
+  font-family: 'Arial', sans-serif;
+  background: rgba(255, 0, 0, 0.521);
   clear: both;
-  padding: 20px;
+  padding: 10px ;
   text-align: center;
   display: none;
 }
-
 /** Calendario **/
 div.calendario h3 {
   background-color: #fe4918;
@@ -969,95 +970,6 @@ div.cboxElement {
   padding: 30px!important;
   text-align: center;
 }
-
-/** Formularios **/
-.mensaje{
-  border:3px solid green;
-  padding:10px;
-  text-align: center;
-}
-.mensaje.error{
-  border:3px solid red;
-}
-form.login,
-form.invitado {
-  display: block;
-}
-@media only screen and (min-width:480px) {
-  form.login,
-  form.invitado {
-    width: 80%;
-    margin: 0 auto;
-  }
-}
-@media only screen and (min-width:768px) {
-  form.login,
-
-}
-@media only screen and (min-width:768px) {
-  form.invitado{
-    width: 60%;
-  }
-}
-form.login div.campo,
-form.invitado div.campo {
-  width: 100%;
-  float: none;
-  padding: 5px;
-}
-form.invitado input,
-form.invitado textarea {
-  width: 100%;
-  border:1px solid #cccccc;
-}
-form.invitado input[type="radio"] {
-  width: auto;
-}
-form.invitado div.campo {
-  margin-bottom: 10px;
-}
-form.invitado input#imagen {
-  border:none;
-}
-form.login label,
-form.invitado label {
-  width: 80px;
-  display: inline-block;
-}
-/** Admin **/
-section.admin nav {
-  padding: 20px;
-  background-color: #fe4918;
-  margin-bottom: 30px;
-}
-section.admin nav a {
-  text-decoration: none;
-  color: white;
-  padding: 5px 10px;
-}
-section.admin nav a:hover,
-#filtros a.activo {
-  border-bottom: 4px solid white;
-}
-
-/* TABLA REGISTRADOS */
-table td {
-  border: 1px solid #999999;
-  border-collapse: collapse;
-  padding: 20px;
-}
-table.registrados thead {
-  background-color: #353535;
-  color: white;
-}
-table.registrados thead th {
-  padding: 10px;
-}
-table.registrados tr:nth-child(4n),
-table.registrados tr:nth-child(4n-1) {
-  background-color: #dcdcdc;
-}
-
 
 /* ==========================================================================
    Helper classes
